@@ -1,11 +1,3 @@
-// script.js content
-
-// Disable right-click on the entire document
-document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
-    // Optionally, you can display a custom message when right-clicking
-    alert("Right-click prohibited");
-});
 (function(){
     var script = {
  "start": "this.init()",
