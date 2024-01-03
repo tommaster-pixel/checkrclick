@@ -4,7 +4,7 @@
     <title>Untitled 3</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="user-scalable=no, initial-scale=0.5, width=device-width, viewport-fit=cover" />
-     <script type="text/javascript" src="script.js"></script>
+    
     <link rel="preload" href="script.js?v=1704270228443" as="script"/>
 <link rel="preload" href="media/panorama_C4501445_CE69_140A_41C4_E6576F60DBDF_0/l/3/0_0.jpg?v=1704270228443" as="image"/>
 <link rel="preload" href="media/panorama_C4501445_CE69_140A_41C4_E6576F60DBDF_0/r/3/0_0.jpg?v=1704270228443" as="image"/>
@@ -341,6 +341,21 @@ loadTour()
     
 </head>
 <body onload="onLoad()">
+     <script>
+        function onLoad() {
+            // Add this script to disable right-click
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            // The rest of your onLoad function
+            // ...
+
+            // Additional existing JavaScript code
+            // ...
+        }
+    </script>
+
     <div id="preloadContainer" style="background-color:rgba(255,255,255,1)"><div style="z-index: 4; position: absolute; left: 0%; top: 50%; width: 100.00%; height: 10.00%"><div style="text-align:left; color:#000; "><DIV STYLE="text-align:center;"><SPAN STYLE="letter-spacing:0vmin;color:#777777;font-size:1.48vmin;font-family:Arial, Helvetica, sans-serif;">Loading virtual tour. Please wait...</SPAN></DIV><p STYLE="margin:0; line-height:1.11vmin;"><BR STYLE="letter-spacing:0vmin;color:#000000;font-size:1.11vmin;font-family:Arial, Helvetica, sans-serif;"/></p></div></div></div>
     <div id="viewer"></div>
 </body>
